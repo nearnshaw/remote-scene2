@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "module": "CommonJS",
+      "target": "ES6",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true,
+      "moduleResolution": "Node",
+      "forceConsistentCasingInFileNames": true,
+      "noUnusedLocals": true,
+      "allowSyntheticDefaultImports": false,
+      "newLine": "lf",
+      "stripInternal": true,
+      "baseUrl": ".",
+      "strict": true,
+      "removeComments": true,
+      "outDir": "../../dist/server",
+      "pretty": true,
+      "lib": ["ESNext"]
+    }
+  }

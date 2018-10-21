@@ -1,3 +1,10 @@
+package-lock.json
+src/scene/package-lock.json
+node_modules/
+src/scene/node_modules/
+*.js
+dist/
+
 # Logs
 logs
 *.log
