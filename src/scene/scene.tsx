@@ -38,6 +38,8 @@ export default class WebsocketScene extends DCL.ScriptableScene<any, IState> {
 
     socket.on("connect", () => {
       this.setState({ connected: true });
+      const { id, username, position, rotation } = character;
+      socket.emit("character-join", { id, username, position, rotation });
     });
 
     socket.on("disconnect", () => {

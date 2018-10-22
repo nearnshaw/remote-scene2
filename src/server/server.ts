@@ -3,7 +3,10 @@ import * as express from "express";
 import * as http from "http";
 import * as socketio from "socket.io";
 import { CharacterManager } from "./lib/character-manager";
-import { throttle } from "decentraland-rpc/lib/host/API";
+
+const characterManager = new CharacterManager();
+const throttle = require("lodash/throttle");
+
 
 //
 // express allows us to use CORS easily
@@ -78,7 +81,7 @@ httpServer.listen(port, (err?: Error) => {
   });
   
 // Instance a CharacterManager object to keep track of user data
-const characterManager = new CharacterManager();
+
 
 socketServer.on("connect", (socket: socketio.Socket) => {
   let characterId: string | undefined;

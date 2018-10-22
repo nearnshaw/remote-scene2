@@ -21,7 +21,7 @@
     "jsx": "react",
     "jsxFactory": "DCL.createElement",
     "removeComments": true,
-    "outDir": "../../dist/scene", 
+    "outDir": ".", 
     "pretty": true,
     "lib": ["es2017", "dom"]
   },

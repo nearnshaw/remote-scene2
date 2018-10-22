@@ -23,5 +23,5 @@
     "blacklist": [],
     "teleportPosition": "0,0,0"
   },
-  "main": "scene.js"
+  "main": "src/scene/scene.js"
 }
